@@ -1,0 +1,94 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+	
+	var grafico = document.querySelector("canvas");
+	var pincel = grafico.getContext("2d");
+
+
+	pincel.fillStyle = "lightgray";
+	pincel.fillRect(0,0, 600, 400);
+	
+	function desenharQuadrados(cor, x, y, largura, altura) {
+		pincel.fillStyle = cor;
+		pincel.fillRect(x, y, largura, altura);
+		pincel.strokeStyle = "Black";
+		pincel.strokeRect(x, y, largura, altura);
+	}
+	
+	desenharQuadrados("red", 150, 300, 70, 100);
+	desenharQuadrados("Yellow", 150, 280, 70, 100);
+	desenharQuadrados("green",150, 250, 70, 100);
+	desenharQuadrados("blue", 150, 200, 70, 100);
+
+	desenharQuadrados("red", 350, 300, 70, 100);
+	desenharQuadrados("Yellow", 350, 290, 70, 100);
+	desenharQuadrados("green", 350, 260, 70, 100);
+	desenharQuadrados("blue", 350, 200, 70, 120);
+
+	function desenharQuadradosMenores(cor, x, y) {
+
+		pincel.fillStyle = cor;
+		pincel.fillRect(x, y, 20, 20);
+		pincel.strokeStyle = "Black";
+		pincel.strokeRect(x, y, 20, 20);
+		
+	}
+
+	desenharQuadradosMenores("Blue", 50, 50); 
+	desenharQuadradosMenores("green", 150, 50);
+	desenharQuadradosMenores("Yellow", 250, 50);
+	desenharQuadradosMenores("red", 350, 50);
+
+	function escrever(texto,x, y) {
+
+		pincel.fillStyle = "Black";
+		pincel.font = "15px Arial";
+		pincel.fillText(texto, x, y);
+		
+
+	}
+	
+	escrever("Google", 80, 65);
+	escrever("Firefox", 180, 65);
+	escrever("Safari", 280, 65);
+	escrever("Outros (Opera, IE, Edge, etc.)", 380, 65);
+
+	escrever("2015", 150, 198);
+	escrever("2016", 350, 198);
+
+	escrever("By Gleiciane Kelly", 450, 380)
+	
+	
+	pincel.fillstyle = "Black";
+	pincel.font = "30px Arial";
+	pincel.fillText("Gráfico de dados", 190, 30);
+	
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

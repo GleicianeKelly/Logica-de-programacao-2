@@ -1,0 +1,55 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var flor = document.querySelector("canvas");
+	var pincel = flor.getContext("2d");
+
+	pincel.fillStyle = "Lightgrey";
+	pincel.fillRect(0, 0, 600, 400);
+
+	pincel.fillStyle = "Red";
+	pincel.beginPath();
+	pincel.moveTo(300, 200);
+	pincel.arc(300, 200, 20, 0, 2 *3.14);
+	pincel.fill();
+
+	pincel.fillStyle = "Yellow";
+	pincel.beginPath();
+	pincel.moveTo(300, 160);
+	pincel.arc(300, 160, 20, 0, 2 *3.14);
+	pincel.fill();
+
+	pincel.fillStyle = "Blue";
+	pincel.beginPath();
+	pincel.moveTo(300, 240);
+	pincel.arc(300, 240, 20, 0, 2 *3.14);
+	pincel.fill();
+
+
+	pincel.fillStyle = "Orange";
+	pincel.beginPath();
+	pincel.moveTo(260, 200);
+	pincel.arc(260, 200, 20, 0, 2 *3.14);
+	pincel.fill();
+
+	pincel.fillStyle = "Black";
+	pincel.beginPath();
+	pincel.moveTo(340, 200);
+	pincel.arc(340, 200, 20, 0, 2 *3.14);
+	pincel.fill();
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

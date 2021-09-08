@@ -1,0 +1,47 @@
+<canvas width=" 600" height="400"></canvas>
+
+
+<script>
+	
+	var tela =  document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	pincel.fillStyle = "White";
+	pincel.fillRect(0, 0, 600, 400);
+	pincel.strokeStyle = "Black";
+	pincel.strokeRect(0, 0, 600, 400);
+	pincel.fillStyle = "Red";
+	pincel.beginPath();
+	pincel.moveTo(300, 200);
+	pincel.arc(300, 200, 70, 0, 2 * 3.14);
+	pincel.fill();
+
+	pincel.fillStyle = "Black";
+	pincel.font = "15px Arial";
+	pincel.fillText("By Gleiciane Kelly", 450, 380);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

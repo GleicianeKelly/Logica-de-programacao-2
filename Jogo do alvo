@@ -1,0 +1,63 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	pincel.fillStyle = "lightgrey";
+	pincel.fillRect(0, 0, 600, 400);
+	pincel.strokeStyle = "Black";
+	pincel.strokeRect(0, 0, 600, 400);
+
+	var raio = 10;
+
+	function pintaBolinha(cor, x, y, raio) {
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.moveTo(300, 200);
+		pincel.arc(x, y, raio, 0, 2 * 3.14);
+		pincel.fill();
+	}
+
+
+	pintaBolinha("red", 300, 200, raio + 20);
+	pintaBolinha("white", 300, 200, raio + 10);
+	pintaBolinha("red", 300, 200, raio);
+
+
+ function dispara(evento) {
+
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+
+        if (x > 300 - raio 
+            && x < 300 + raio
+                && y > 200 - raio 
+                    && y < 200 + raio) {
+
+            alert('Acertou');
+        }
+        else{
+            alert ("Errou!");
+        }
+    }
+
+
+    tela.onclick = dispara;
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+

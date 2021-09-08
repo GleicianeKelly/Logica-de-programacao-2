@@ -1,0 +1,45 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	
+	function pintaQuadrado(x,y, cor) {
+		var quadrado = document.querySelector("canvas");
+		var pincel = quadrado.getContext("2d");
+		pincel.fillStyle = cor;
+		pincel.fillRect(x, y, 50, 50);
+		pincel.strokeStyle = "Black";
+		pincel.strokeRect(x, y, 50, 50);
+
+	}
+
+	pintaQuadrado(0, 0, "Green");
+	pintaQuadrado(50, 0, "Green");
+	pintaQuadrado(100, 0, "Green");
+	pintaQuadrado(150, 0, "White");
+
+	//for(var x =0; x < 600; x = x + 50){
+
+		//pintaQuadrado(x, 0, "green");
+	//}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

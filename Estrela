@@ -1,0 +1,42 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	
+	var estrelas = document.querySelector("canvas");
+	var pincel = estrelas.getContext("2d");
+
+	pincel.fillStyle = "black";
+	pincel.fillRect(0,0,600,400);
+
+	pincel.fillStyle = "Red";
+	pincel.beginPath();
+	pincel.moveTo(20, 20);
+	pincel.lineTo(150,30);
+	pincel.lineTo(50,90);
+	pincel.lineTo(90,5);
+	pincel.lineTo(130,90);
+	pincel.fill();
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
